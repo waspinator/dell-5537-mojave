@@ -17,12 +17,15 @@
 
 
 ## Other
-| Name          | Description                                                                |                                                             |
-| ------------- | -------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| FakeSMC       | System Management Controller, required to boot                             | [download](https://github.com/RehabMan/OS-X-FakeSMC-kozlek) |
-| Lilu          | Arbitrary kext and process patching on macOS, required for certain drivers | [download](https://github.com/acidanthera/Lilu)             |
-| WhateverGreen | patches for graphics, requires Lilu                                        | [download](https://github.com/acidanthera/WhateverGreen)    |
-| AppleALC      | Native macOS HD audio, requires Lilu                                       | [download](https://github.com/acidanthera/AppleALC)         |
+| Name               | Description                                                                |                                                                  |
+| ------------------ | -------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| FakeSMC            | System Management Controller, required to boot                             | [download](https://github.com/RehabMan/OS-X-FakeSMC-kozlek)      |
+| FakePCIID          | Fake PCI ID from IOPCIDevice, adds compatability to unsupported hardware   | [download](https://github.com/RehabMan/OS-X-Fake-PCI-ID)         |
+| ACPIBatteryManager | Battery management                                                         | [download](https://github.com/RehabMan/OS-X-ACPI-Battery-Driver) |
+| Lilu               | Arbitrary kext and process patching on macOS, required for certain drivers | [download](https://github.com/acidanthera/Lilu)                  |
+| WhateverGreen      | patches for graphics, requires Lilu                                        | [download](https://github.com/acidanthera/WhateverGreen)         |
+| AppleALC           | Native macOS HD audio, requires Lilu                                       | [download](https://github.com/acidanthera/AppleALC)              |
+
 
 ## Tools
 
