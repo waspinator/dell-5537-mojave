@@ -3,17 +3,17 @@
 ## Hardware
 
 
-| Component         | Name                             |                                                                                   |
-| ----------------- | -------------------------------- | --------------------------------------------------------------------------------- |
-| Processor         | Intel i7-4500U                   |                                                                                   |
-| Graphics          | Intel HD Graphics 4400           |                                                                                   |
+| Component         | Name                             |                                                                                     |
+| ----------------- | -------------------------------- | ----------------------------------------------------------------------------------- |
+| Processor         | Intel i7-4500U                   |                                                                                     |
+| Graphics          | Intel HD Graphics 4400           |                                                                                     |
 | Memory            | 8192 MB                          |
-| WiFi              | Broadcom BCM94322HM8L 802.11abgn |                                                                                   |
-| Audio             | Realtek ALC3223                  |                                                                                   |
-| Ethernet          | Realtek RTL8106E                 | [driver](https://www.insanelymac.com/forum/files/file/259-realtekrtl8100-binary/) |
-| Disk              | Samsung SSD 840 250GB            |                                                                                   |
-| Optical           | HL-DT-ST DVD RW GU70N            |                                                                                   |
-| Keyboard/Trackpad | PS/2                             | [driver](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller)                  |
+| WiFi              | Broadcom BCM94322HM8L 802.11abgn |                                                                                     |
+| Audio             | Realtek ALC3223                  |                                                                                     |
+| Ethernet          | Realtek RTL8106E                 | [download](https://www.insanelymac.com/forum/files/file/259-realtekrtl8100-binary/) |
+| Disk              | Samsung SSD 840 250GB            |                                                                                     |
+| Optical           | HL-DT-ST DVD RW GU70N            |                                                                                     |
+| Keyboard/Trackpad | PS/2                             | [download](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller)                  |
 
 
 ## Other
@@ -26,11 +26,13 @@
 
 ## Tools
 
-| Tool                | Description                 |                                                                                                         |
-| ------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------- |
-| Clover              | EFI Bootloader              | [download](https://sourceforge.net/projects/cloverefiboot/), [wiki](https://clover-wiki.zetam.org/home) |
-| Clover Configurator | UI for Clover configuration | [download](https://mackie100projects.altervista.org/download/ccg/)                                      |
-| HWMonitor           | UI for hardware sensors     | [download](https://github.com/RehabMan/OS-X-FakeSMC-kozlek)                                             |
+| Tool                | Description                    |                                                                                                              |
+| ------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| Clover              | EFI Bootloader                 | [download](https://sourceforge.net/projects/cloverefiboot/), [wiki](https://clover-wiki.zetam.org/home)      |
+| Clover Configurator | UI for Clover configuration    | [download](https://mackie100projects.altervista.org/download/ccg/)                                           |
+| HWMonitor           | UI for hardware sensors        | [download](https://github.com/RehabMan/OS-X-FakeSMC-kozlek)                                                  |
+| MaciASL             | ACPI editing IDE for macOS     | [download](https://github.com/RehabMan/OS-X-MaciASL-patchmatic), [2](https://github.com/acidanthera/MaciASL) |
+| iasl                | Intel ACPI compiler/decompiler | [download](https://github.com/RehabMan/Intel-iasl)                                                           |
 
 
 ## Guide
@@ -100,4 +102,8 @@ Install following the prompts. Every time the computer reboots, press `F12` and 
    - RealtekRTL8100.kext
 
 
-sudo kextcache -i /
+### Other
+
+Rebuild kext caches
+
+    sudo touch /System/Library/Extensions && sudo kextcache -u /
